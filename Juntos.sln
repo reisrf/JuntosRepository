@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D73720CB-BC19-49ED-BABE-03D2E92034CD}"
+	ProjectSection(SolutionItems) = preProject
+		Juntos.vsmdi = Juntos.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juntos.Presentation", "Juntos.Presentation\Juntos.Presentation.csproj", "{FE1506E0-35EF-4FAB-8D7C-C3834582D378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juntos.Application", "Juntos.Application\Juntos.Application.csproj", "{1274B139-8FE6-4F42-9A46-CF753FB84D54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juntos.Domain", "Juntos.Domain\Juntos.Domain.csproj", "{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juntos.DAL", "Juntos.DAL\Juntos.DAL.csproj", "{C62A4407-E623-4520-9539-69586DD08BA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juntos.Infrastructure", "Juntos.Infrastructure\Juntos.Infrastructure.csproj", "{0E9FFD50-62E8-48C1-A97B-9074E6E24D74}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Juntos.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE1506E0-35EF-4FAB-8D7C-C3834582D378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1506E0-35EF-4FAB-8D7C-C3834582D378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1506E0-35EF-4FAB-8D7C-C3834582D378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1506E0-35EF-4FAB-8D7C-C3834582D378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1274B139-8FE6-4F42-9A46-CF753FB84D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1274B139-8FE6-4F42-9A46-CF753FB84D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1274B139-8FE6-4F42-9A46-CF753FB84D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1274B139-8FE6-4F42-9A46-CF753FB84D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62A4407-E623-4520-9539-69586DD08BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62A4407-E623-4520-9539-69586DD08BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62A4407-E623-4520-9539-69586DD08BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62A4407-E623-4520-9539-69586DD08BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9FFD50-62E8-48C1-A97B-9074E6E24D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9FFD50-62E8-48C1-A97B-9074E6E24D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9FFD50-62E8-48C1-A97B-9074E6E24D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9FFD50-62E8-48C1-A97B-9074E6E24D74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
