@@ -40,10 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Advertiser.cs" />
+    <Compile Include="Model\Consumer.cs" />
+    <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\Coordinate.cs" />
+    <Compile Include="Model\Coupon.cs" />
+    <Compile Include="Model\Entity.cs" />
+    <Compile Include="Model\Login.cs" />
+    <Compile Include="Model\Offer.cs" />
+    <Compile Include="Model\OfferStatus.cs" />
+    <Compile Include="Model\Payment.cs" />
+    <Compile Include="Model\PaymentStatus.cs" />
+    <Compile Include="Model\PaymentType.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\PersonType.cs" />
+    <Compile Include="Model\Purchase.cs" />
+    <Compile Include="Model\PurchaseStatus.cs" />
+    <Compile Include="Model\Telephone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
