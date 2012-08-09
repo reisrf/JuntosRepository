@@ -16,6 +16,8 @@ namespace Juntos.Domain.Model
         public int limitOfCupons { get; private set; }
         public double priceOfCupoun { get; private set; }
         public virtual OfferStatus status { get; private set; }
+        public virtual Address address { get; set; }
+        public virtual Telephone telephone { get; set; }
 
 
         public Offer() 

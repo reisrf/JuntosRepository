@@ -16,7 +16,7 @@ namespace Juntos.Domain.Model
         public string state { get; set; }
         public string zipCode { get; set; }
         public string country { get; set; }
-        public Coordinate coordinates { get; set; }
+        public Coordinate coordinate { get; set; }
 
     }
 }

@@ -15,13 +15,15 @@ namespace Juntos.Domain.Model
         private List<Telephone> _telephones = new List<Telephone>();
         public virtual List<Telephone> telephones { get { return this._telephones; } private set { this._telephones = value; } }
 
-        private List<Address> addresses = new List<Address>();
-        public virtual List<Address> Addresses { get { return this.addresses; } private set { this.addresses = value; } }
+        private List<Address> _addresses = new List<Address>();
+        public virtual List<Address> addresses { get { return this._addresses; } private set { this._addresses = value; } }
 
         public virtual Login login { get; set; }
 
         public PersonType type { get; set; }
-        
+
+       
+
         public void AddTelephone(Telephone parameter) 
         {
 

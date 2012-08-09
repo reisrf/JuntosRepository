@@ -31,8 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>C:\JuntosDLLs\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,11 +45,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementation\AddressDao.cs" />
+    <Compile Include="Implementation\AdvertiserDao.cs" />
+    <Compile Include="Implementation\ConsumerDao.cs" />
+    <Compile Include="Implementation\CoordinateDao.cs" />
+    <Compile Include="Implementation\CouponDao.cs" />
+    <Compile Include="Implementation\JuntosContext.cs" />
+    <Compile Include="Implementation\JuntosDb.cs" />
+    <Compile Include="Implementation\LoginDao.cs" />
+    <Compile Include="Implementation\OfferDao.cs" />
+    <Compile Include="Implementation\PaymentDao.cs" />
+    <Compile Include="Implementation\PersonDao.cs" />
+    <Compile Include="Implementation\TelephoneDao.cs" />
+    <Compile Include="Interfaces\IBaseDao.cs" />
+    <Compile Include="Interfaces\IConsumerDao.cs" />
+    <Compile Include="Interfaces\IAdvertiserDao.cs" />
+    <Compile Include="Interfaces\IAddressDao.cs" />
+    <Compile Include="Interfaces\ICouponDao.cs" />
+    <Compile Include="Interfaces\ILoginDao.cs" />
+    <Compile Include="Interfaces\ICoordinateDao.cs" />
+    <Compile Include="Interfaces\IPaymentDao.cs" />
+    <Compile Include="Interfaces\IPurchaseDao.cs" />
+    <Compile Include="Interfaces\IOfferDao.cs" />
+    <Compile Include="Interfaces\IPersonDao.cs" />
+    <Compile Include="Interfaces\ITelephoneDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Implementation\" />
-    <Folder Include="Interfaces\" />
+    <None Include="Implementation\App.config" />
+    <None Include="Implementation\packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Juntos.Domain\Juntos.Domain.csproj">
+      <Project>{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}</Project>
+      <Name>Juntos.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Juntos.Domain.Model
 {
-    public class Coupon
+    public class Coupon : Entity
     {
         public DateTime notValidAfter { get; private set; }
         public bool used { get; private set; }
@@ -13,6 +13,7 @@ namespace Juntos.Domain.Model
         public Guid couponCode { get; set; }
         public double price { get; private set; }
         public virtual Offer offer { get; private set; }
+        
 
         public Coupon(Offer parameter)
         {

@@ -47,6 +47,7 @@
     <Compile Include="Model\Coupon.cs" />
     <Compile Include="Model\Entity.cs" />
     <Compile Include="Model\Login.cs" />
+    <Compile Include="Model\LoginStatus.cs" />
     <Compile Include="Model\Offer.cs" />
     <Compile Include="Model\OfferStatus.cs" />
     <Compile Include="Model\Payment.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Repository\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

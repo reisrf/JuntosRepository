@@ -10,6 +10,8 @@ namespace Juntos.Domain.Model
         private List<Offer> _offers = new List<Offer>();
         public virtual List<Offer> offers { get { return this._offers; } private set { this._offers = value; } }
 
+       
+
         public void AddOffer(Offer parameter)
         {
 

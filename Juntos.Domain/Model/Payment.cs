@@ -13,7 +13,7 @@ namespace Juntos.Domain.Model
         public virtual Purchase purchase { get; private set; }
         public virtual PaymentStatus status { get; private set; }
         public virtual PaymentType type { get; private set; }
-
+        
 
         public Payment(Purchase parameter, PaymentType type) 
         {

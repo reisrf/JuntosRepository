@@ -9,6 +9,7 @@ namespace Juntos.Domain.Model
     {
         public string userName { get; set; }
         public string password { get; set; }
+        public virtual LoginStatus status { get; set; }
 
         public void doLogin() 
         {
