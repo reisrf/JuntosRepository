@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Juntos.IDAL
+namespace Juntos.DAL.Interfaces
 {
     public interface IBaseDao<TEntidade>
     {

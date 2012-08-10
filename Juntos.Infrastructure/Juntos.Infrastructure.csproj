@@ -41,10 +41,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Implementation\AdvertiserRepository.cs" />
+    <Compile Include="Repository\Implementation\BaseRepository.cs" />
+    <Compile Include="Repository\Implementation\ConsumerRepository.cs" />
+    <Compile Include="Repository\Implementation\OfferRepository.cs" />
+    <Compile Include="Repository\Implementation\PaymentRepository.cs" />
+    <Compile Include="Repository\Implementation\PurchaseRepository.cs" />
+    <Compile Include="Repository\Interfaces\IAdvertiserRepository.cs" />
+    <Compile Include="Repository\Interfaces\IConsumerRepository.cs" />
+    <Compile Include="Repository\Interfaces\IOfferRepository.cs" />
+    <Compile Include="Repository\Interfaces\IBaseRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPaymentRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPurchaseRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Juntos.DAL\Juntos.DAL.csproj">
+      <Project>{C62A4407-E623-4520-9539-69586DD08BA5}</Project>
+      <Name>Juntos.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Juntos.Domain\Juntos.Domain.csproj">
+      <Project>{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}</Project>
+      <Name>Juntos.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
