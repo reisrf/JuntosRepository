@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Juntos.Domain.Model;
+
+namespace Juntos.Domain.Services.Interfaces
+{
+    public interface IOfferService : IBaseService<Offer>
+    {
+        void Publish(long idOferta);
+        void Finalize(long idOferta);
+    }
+}
