@@ -31,17 +31,17 @@ namespace Juntos.Infrastructure.Repository.Implementation
             this._entidadeDao.Delete(entidade);
         }
 
-        public List<TEntity> ListByExpression(Func<TEntity, bool> expressaoDeConsulta)
+        public List<TEntity> FindByExpression(Func<TEntity, bool> expressaoDeConsulta)
         {
             return this._entidadeDao.ListByExpression(expressaoDeConsulta).ToList();
         }
 
-        public List<TEntity> ListAll()
+        public List<TEntity> FindAll()
         {
             return this._entidadeDao.ListAll().ToList();
         }
 
-        public TEntity ListById(long id)
+        public TEntity FindById(long id)
         {
             return this._entidadeDao.ListById(id);
         }

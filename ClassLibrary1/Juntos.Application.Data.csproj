@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}</ProjectGuid>
+    <ProjectGuid>{DC6130F8-59B4-4DCB-AD2B-84F04448FF18}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Juntos.Domain</RootNamespace>
-    <AssemblyName>Juntos.Domain</AssemblyName>
+    <RootNamespace>ClassLibrary1</RootNamespace>
+    <AssemblyName>ClassLibrary1</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,35 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Advertiser.cs" />
-    <Compile Include="Model\Consumer.cs" />
-    <Compile Include="Model\Address.cs" />
-    <Compile Include="Model\Coordinate.cs" />
-    <Compile Include="Model\Coupon.cs" />
-    <Compile Include="Model\Entity.cs" />
-    <Compile Include="Model\Login.cs" />
-    <Compile Include="Model\LoginStatus.cs" />
-    <Compile Include="Model\Offer.cs" />
-    <Compile Include="Model\OfferStatus.cs" />
-    <Compile Include="Model\Payment.cs" />
-    <Compile Include="Model\PaymentStatus.cs" />
-    <Compile Include="Model\PaymentType.cs" />
-    <Compile Include="Model\Person.cs" />
-    <Compile Include="Model\PersonType.cs" />
-    <Compile Include="Model\Purchase.cs" />
-    <Compile Include="Model\PurchaseStatus.cs" />
-    <Compile Include="Model\Telephone.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Interfaces\IAdvertiserService.cs" />
-    <Compile Include="Services\Interfaces\IBaseService.cs" />
-    <Compile Include="Services\Interfaces\IConsumerService.cs" />
-    <Compile Include="Services\Interfaces\IOfferService.cs" />
-    <Compile Include="Services\Interfaces\IPaymentService.cs" />
-    <Compile Include="Services\Interfaces\IPersonService.cs" />
-    <Compile Include="Services\Interfaces\IPurchaseService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\Implementation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

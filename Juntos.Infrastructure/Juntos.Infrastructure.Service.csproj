@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1274B139-8FE6-4F42-9A46-CF753FB84D54}</ProjectGuid>
+    <ProjectGuid>{0E9FFD50-62E8-48C1-A97B-9074E6E24D74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Juntos.Application</RootNamespace>
-    <AssemblyName>Juntos.Application</AssemblyName>
+    <RootNamespace>Juntos.Infrastructure</RootNamespace>
+    <AssemblyName>Juntos.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,9 +42,16 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DTO\" />
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\Juntos.DAL\Juntos.DAL.csproj">
+      <Project>{C62A4407-E623-4520-9539-69586DD08BA5}</Project>
+      <Name>Juntos.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Juntos.Domain\Juntos.Domain.Model.csproj">
+      <Project>{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}</Project>
+      <Name>Juntos.Domain.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

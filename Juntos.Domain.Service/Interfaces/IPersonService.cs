@@ -10,8 +10,9 @@ namespace Juntos.Domain.Services.Interfaces
        where TPerson : Person
     {
         List<TPerson> FindByName(string parameter);
-        TPerson FindByDocument(long parameter);
-        bool CheckPassword(string parameter);
+        TPerson FindByDocument(string parameter);
+        bool CheckPassword(long personid, string parameter);
+        TPerson FindByLogin(string param);
         
     }
 }

@@ -10,8 +10,8 @@ namespace Juntos.Infrastructure.Repository.Interfaces
         void Add(TEntity entidade);
         void Update(TEntity entidade);
         void Delete(TEntity entidade);
-        List<TEntity> ListByExpression(Func<TEntity, bool> expressaoDeConsulta);
-        List<TEntity> ListAll();
-        TEntity ListById(long id);
+        List<TEntity> FindByExpression(Func<TEntity, bool> expressaoDeConsulta);
+        List<TEntity> FindAll();
+        TEntity FindById(long id);
     }
 }

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C62A4407-E623-4520-9539-69586DD08BA5}</ProjectGuid>
+    <ProjectGuid>{8E5BD06F-3D0C-49AD-98DF-DE244701860F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Juntos.DAL</RootNamespace>
-    <AssemblyName>Juntos.DAL</AssemblyName>
+    <RootNamespace>Juntos.Domain.Service</RootNamespace>
+    <AssemblyName>Juntos.Domain.Service</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,13 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>C:\JuntosDLLs\EntityFramework.dll</HintPath>
+    <Reference Include="Framework">
+      <HintPath>C:\JuntosDLLs\Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,40 +43,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implementation\AddressDao.cs" />
-    <Compile Include="Implementation\AdvertiserDao.cs" />
-    <Compile Include="Implementation\ConsumerDao.cs" />
-    <Compile Include="Implementation\CoordinateDao.cs" />
-    <Compile Include="Implementation\CouponDao.cs" />
-    <Compile Include="Implementation\JuntosContext.cs" />
-    <Compile Include="Implementation\JuntosDb.cs" />
-    <Compile Include="Implementation\LoginDao.cs" />
-    <Compile Include="Implementation\OfferDao.cs" />
-    <Compile Include="Implementation\PaymentDao.cs" />
-    <Compile Include="Implementation\PersonDao.cs" />
-    <Compile Include="Implementation\TelephoneDao.cs" />
-    <Compile Include="Interfaces\IBaseDao.cs" />
-    <Compile Include="Interfaces\IConsumerDao.cs" />
-    <Compile Include="Interfaces\IAdvertiserDao.cs" />
-    <Compile Include="Interfaces\IAddressDao.cs" />
-    <Compile Include="Interfaces\ICouponDao.cs" />
-    <Compile Include="Interfaces\ILoginDao.cs" />
-    <Compile Include="Interfaces\ICoordinateDao.cs" />
-    <Compile Include="Interfaces\IPaymentDao.cs" />
-    <Compile Include="Interfaces\IPurchaseDao.cs" />
-    <Compile Include="Interfaces\IOfferDao.cs" />
-    <Compile Include="Interfaces\IPersonDao.cs" />
-    <Compile Include="Interfaces\ITelephoneDao.cs" />
+    <Compile Include="Implementation\AdvertiserService.cs" />
+    <Compile Include="Implementation\BaseService.cs" />
+    <Compile Include="Implementation\ConsumerService.cs" />
+    <Compile Include="Implementation\CouponService.cs" />
+    <Compile Include="Implementation\OfferService.cs" />
+    <Compile Include="Implementation\PaymentService.cs" />
+    <Compile Include="Implementation\PersonService.cs" />
+    <Compile Include="Implementation\PurchaseService.cs" />
+    <Compile Include="Interfaces\IAdvertiserService.cs" />
+    <Compile Include="Interfaces\IBaseService.cs" />
+    <Compile Include="Interfaces\IConsumerService.cs" />
+    <Compile Include="Interfaces\ICouponService.cs" />
+    <Compile Include="Interfaces\IOfferService.cs" />
+    <Compile Include="Interfaces\IPaymentService.cs" />
+    <Compile Include="Interfaces\IPersonService.cs" />
+    <Compile Include="Interfaces\IPurchaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Implementation\App.config" />
-    <None Include="Implementation\packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Juntos.Domain\Juntos.Domain.Model.csproj">
       <Project>{F5D0571F-61D0-4658-A0AC-A2BA5DBAA5EE}</Project>
       <Name>Juntos.Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Juntos.Infrastructure.Repository\Juntos.Infrastructure.Repository.csproj">
+      <Project>{6362EA3A-0541-494F-9E4C-10BE1C0EC939}</Project>
+      <Name>Juntos.Infrastructure.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

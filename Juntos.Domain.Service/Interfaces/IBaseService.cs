@@ -13,8 +13,8 @@ namespace Juntos.Domain.Services.Interfaces
         void Update(TEntity entidade);
         void Delete(TEntity entidade);
         void Save(TEntity entidade);
-
-        TEntity ListById(long id);
-        List<TEntity> ListAll();
+        TEntity FindById(long id);
+        List<TEntity> FindAll();
+        
     }
 }
